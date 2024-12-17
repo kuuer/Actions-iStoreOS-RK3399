@@ -84,12 +84,12 @@ define Device/rk3399_r08
 endef
 TARGET_DEVICES += rk3399_r08
 
-define Device/rk3399_tpm312
+define Device/rk3399_lx-r3s
   DEVICE_VENDOR := RK3399
-  DEVICE_MODEL := TPM312
+  DEVICE_MODEL := LX-R3S
   SOC := rk3399
-  SUPPORTED_DEVICES := rk3399,tpm312
-  UBOOT_DEVICE_NAME := tpm312-rk3399
+  SUPPORTED_DEVICES := rk3399,lx-r3s
+  UBOOT_DEVICE_NAME := lx-r3s-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
 endef
-TARGET_DEVICES += rk3399_tpm312
+TARGET_DEVICES += rk3399_lx-r3s
