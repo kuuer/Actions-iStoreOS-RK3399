@@ -15,7 +15,7 @@ rockchip_setup_interfaces()
 		;;
 	armsom,p2pro|\
 	rk3399,r08|\
-	rk3399,tpm312)
+	rk3399,lx-r3s)
 		ucidef_set_interface_lan 'eth0' 'dhcp'
 		;;
 	*)
@@ -80,7 +80,7 @@ rockchip_setup_macs()
 		;;
 	armsom,p2pro|\
 	rk3399,r08|\
-	rk3399,tpm312)
+	rk3399,lx-r3s)
 		lan_mac=$(generate_mac_from_mmc_cid)
 		;;
 	esac
